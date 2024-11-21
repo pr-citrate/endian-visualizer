@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Endian Memory Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+**Endian Memory Visualizer** is a web application designed to help users visually understand how data is stored in memory across different endian architectures. By selecting between Little-endian and Big-endian formats, users can input values in hexadecimal or decimal formats and observe how these values are arranged in various memory regions such as the stack, heap, and data segments. Additionally, the application provides corresponding C language code examples with syntax highlighting to illustrate how variables are stored in different memory areas.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Endian Configuration:** Switch between Little-endian and Big-endian architectures.
+- **Input Methods:** Support for both hexadecimal (Hex) and decimal (Dec) input formats.
+- **Memory Region Selection:** Choose between Stack, Heap, and Data segments to visualize data storage.
+- **Real-time Memory Visualization:** Dynamic table representation of memory structure based on selected settings.
+- **Code Examples:** Automatically generated and syntax-highlighted C code snippets corresponding to the selected memory region.
+- **Responsive Design:** Optimized for various devices to ensure a seamless user experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Live Demo](https://your-demo-link.com)
 
-### `npm test`
+## Technology Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend:**
+    - [React](https://reactjs.org/)
+    - [Tailwind CSS](https://tailwindcss.com/)
+    - [React Syntax Highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
 
-### `npm run build`
+- **Package Manager:**
+    - [pnpm](https://pnpm.io/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the Repository:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/your-username/endian-memory-visualizer.git
+   cd endian-memory-visualizer
+   ```
+2. **Install Dependencies:**
+    ```bash
+    pnpm install
+    ```
+3. **Start the Development Server:**
+    ```bash
+    pnpm start
+    ```
+4. Open your browser and navigate to http://localhost:3000 to view the application.
 
-### `npm run eject`
+## Usage
+1. Configure Endian Settings:
+- Use the dropdown menu to select Little-endian or Big-endian architecture.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Select Input Method:
+- Choose between Hexadecimal (0x...) or Decimal input formats.
+3. Choose Memory Region:
+- Select Stack, Heap, or Data to determine where the input value will be stored.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Enter Value:
+- Input a value within the range 0 to 4,294,967,295 based on the selected input method.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. View Memory Visualization:
+- The memory structure updates in real-time, displaying how the value is stored in the selected memory region.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+6. Explore Code Examples:
+- Review the automatically generated C code snippets that demonstrate how variables are stored in different memory areas.
 
-## Learn More
+## Contributing
+Contributions are welcome! Whether it's reporting bugs, suggesting features, or submitting code, your input is valuable.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Fork the Repository:
+- Click the "Fork" button on the repository page.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Create a New Branch:
+- ```bash
+  git checkout -b feature/YourFeatureName
+  ```
+  
+3. Make Your Changes:
+- Implement your feature or fix.
 
-### Code Splitting
+4. Commit Your Changes:
+- ```bash
+  git commit -m "Add Your Feature"
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Push to Your Fork:
+- ```bash
+    git push origin feature/YourFeatureName
+  ```
+6. Submit a Pull Request:
+- Navigate to the original repository and create a pull request.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+© 2024 Endian Memory Visualizer. All rights reserved.
